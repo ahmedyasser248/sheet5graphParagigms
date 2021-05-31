@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="893.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ScatterChart fx:id="sc1" layoutX="140.0" layoutY="56.0" title="fib normal" AnchorPane.topAnchor="56.0">
+        <xAxis>
+          <NumberAxis label="Number of terms" side="BOTTOM" fx:id="x_axis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y_axis" label="time (nanoSeconds)" side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <ScatterChart fx:id="sc2" layoutX="140.0" layoutY="456.0" title="Fib with tail" AnchorPane.bottomAnchor="37.0">
+        <xAxis>
+          <NumberAxis label="number of terms" side="BOTTOM" fx:id="x_axis2" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y_axis2" label="time(nanoSeconds)" side="LEFT" tickUnit="10.0" />
+        </yAxis>
+      </ScatterChart>
+   </children>
+</AnchorPane>
